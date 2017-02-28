@@ -41,7 +41,7 @@ public class CustomImageView extends ImageView {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.save();
-        canvas.translate(2,2);
+        canvas.translate(0,0);
 
         paint.setColor(Color.parseColor("#70000000"));
         canvas.drawRect(0, 0, getWidth(), getHeight() - getHeight() * progress / 100, paint);
